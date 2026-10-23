@@ -1,0 +1,4 @@
+sample_id,endpointId,definitionId,regimenId,timeWindow,baseline_psa,followup_psa,baseline_unit,followup_unit,psa_assessment_weeks
+Synthetic Example A,PSA50_at_assessment,single_assessment,SYNTHETIC-regimen,8 weeks,100,40,ng/mL,ng/mL,8
+Synthetic Example B,PSA50_at_assessment,single_assessment,SYNTHETIC-regimen,8 weeks,100,70,ng/mL,ng/mL,8
+Synthetic Example C,PSA50_at_assessment,single_assessment,SYNTHETIC-regimen,8 weeks,100,0,ng/mL,ng/mL,8

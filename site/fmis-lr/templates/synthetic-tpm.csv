@@ -1,0 +1,4 @@
+sample_id,ASPN,COMP,CTHRC1,FN1,FOXS1,ITGBL1,NOX4,SFRP4,TMEM132E,Gleason_high,pT_adv
+Synthetic Example A,8,15,4,35,2,2,8,25,0.1,0,0
+Synthetic Example B,14,31,8,59,4.6,2.1,1.1,47,0.3,1,0
+Synthetic Example C,45,90,22,120,8,7,0.5,100,0.8,1,1
