@@ -2,14 +2,15 @@ const e=`:host{display:block;color:#eaf5fc;font-family:inherit;container-type:in
 *{box-sizing:border-box}button,a{font:inherit}bdi{unicode-bidi:isolate}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .advantage{position:relative;isolation:isolate;display:grid;grid-template-columns:1.05fr 1fr;overflow:hidden;background:linear-gradient(112deg,#102d3c 0%,#0a1f30 46%,#0e2638 100%);border:1px solid #45677b70;border-radius:20px;box-shadow:0 16px 52px -30px #000d1d;margin:0}
 .advantage::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 17% 115%,#43b6a51a,transparent 54%),radial-gradient(ellipse at 82% 0,#508ecc17,transparent 51%);z-index:-1}
-.tile{position:relative;min-width:0;padding:28px 30px 24px;display:flex;flex-direction:column;gap:16px;isolation:isolate}
+.tile{position:relative;min-width:0;min-height:315px;padding:28px 30px 24px;display:flex;flex-direction:column;gap:16px;isolation:isolate;background:linear-gradient(135deg,#102d40e8,#0b1b2cf0)}
+.tile::before{content:"";position:absolute;inset:0;pointer-events:none;border-inline-start:2px solid #71cdb59c;box-shadow:inset 0 1px 0 #b9e9e819;z-index:-1}
+.tile::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(108deg,transparent 35%,#b7f6e812 49%,transparent 62%);transform:translateX(-140%);animation:a-sheen 10s ease-in-out infinite;z-index:-1}
 .tile+.tile{border-inline-start:1px solid #52758642}
 h2{font-size:clamp(22px,2.4cqi,30px);font-weight:650;line-height:1.3;letter-spacing:-.035em;color:var(--a-ink);margin:0;text-wrap:balance;max-width:100%}
 p{font-size:14px;line-height:1.65;color:var(--a-muted);margin:0;max-width:56ch;text-wrap:pretty}
 .rank-core{display:flex;align-items:center;gap:24px;min-height:122px;margin-top:0;position:relative;isolation:isolate}
 .catalogue{position:relative;align-self:stretch;flex:1;min-width:142px;padding-top:4px;display:flex;flex-direction:column;justify-content:center}
 .catalogue-number{font-size:82px;line-height:.92;font-weight:650;letter-spacing:-.075em;font-variant-numeric:tabular-nums;position:relative;color:#edfffb;text-shadow:0 0 26px #72e0cd20}
-.catalogue-number::after{content:"";position:absolute;inset:0 -5px;pointer-events:none;background:linear-gradient(105deg,transparent 10%,#defafc22 50%,transparent 65%);mix-blend-mode:screen;transform:translateX(-140%);opacity:0;animation:a-sheen 8s ease-in-out infinite}
 .catalogue-label{position:relative;font-size:12px;line-height:1.35;color:#b7d4dd;margin-top:10px;max-width:20ch}
 .lattice{position:absolute;inline-size:180px;height:116px;inset-inline-start:48px;top:6px;display:grid;grid-template-columns:repeat(13,1fr);grid-template-rows:repeat(9,1fr);gap:3px;transform:perspective(650px) rotateY(-23deg) rotateZ(-11deg);opacity:.33;pointer-events:none;z-index:-1;mask-image:linear-gradient(90deg,transparent,#000 52%,transparent)}
 .lattice span{border-radius:2px;background:linear-gradient(135deg,#8fd8db96,#5189a118);border:1px solid #8dd7cd4d;box-shadow:0 1px 2px #c8fff40a}
@@ -25,7 +26,7 @@ p{font-size:14px;line-height:1.65;color:var(--a-muted);margin:0;max-width:56ch;t
 .precision-field{position:absolute;inset:-10px 3%;pointer-events:none;z-index:-1;opacity:.6;overflow:hidden;mask-image:radial-gradient(ellipse at center,#000 0,transparent 75%)}
 .precision-field i{position:absolute;display:block;width:230px;height:75px;top:17px;left:50%;margin-left:-115px;border:1px solid #6bc7d334;transform:perspective(600px) rotateX(60deg) rotateZ(-26deg);border-radius:17px;background:linear-gradient(105deg,#82dcdf05,#73b2ed20,#a6ece003);box-shadow:0 1px 0 #b9ffec3b}
 .precision-field i:nth-child(2){top:34px;width:260px;margin-left:-130px;opacity:.7}.precision-field i:nth-child(3){top:51px;width:290px;margin-left:-145px;opacity:.42}
-.fmis-plaque{position:relative;overflow:hidden;min-width:0;justify-content:center;display:flex;align-items:center;gap:11px;color:#e5fff5;background:linear-gradient(110deg,#1f5360e6,#163c4bf2);padding:15px 28px;border:1px solid #aaf8e478;border-radius:12px;box-shadow:0 10px 30px -14px #73e3cd66,inset 0 1px 0 #d9fff61a;font-size:25px;font-weight:630;letter-spacing:-.045em;line-height:1.1;transform:translateY(0);animation:a-float 7s ease-in-out infinite}
+.fmis-plaque{position:relative;overflow:hidden;min-width:0;justify-content:center;display:flex;align-items:center;gap:11px;color:#e5fff5;background:linear-gradient(110deg,#1f5360e6,#163c4bf2);padding:15px 28px;border:1px solid #aaf8e478;border-inline-start:3px solid #9cebd1;border-radius:12px;box-shadow:0 10px 30px -14px #73e3cd66,inset 0 1px 0 #d9fff61a;font-size:25px;font-weight:630;letter-spacing:-.045em;line-height:1.1;transform:translateY(0);animation:a-float 7s ease-in-out infinite}
 .fmis-mark{display:flex;gap:4px;align-items:center;transform:rotate(-12deg)}.fmis-mark i{display:block;width:5px;background:#a1ebd4;border-radius:3px;height:21px;box-shadow:0 0 12px #a1ebd431}.fmis-mark i:nth-child(2){height:30px;background:#e7faff}.fmis-mark i:nth-child(3){height:15px;background:#7aaecf}
 .compare-word{height:1px;inline-size:100%;margin:0;display:block;background:linear-gradient(90deg,#7dd9cf20,#b6f5eec9,#7dd9cf20);box-shadow:0 0 10px #82e9db55;user-select:none;font-size:0}
 .indicators{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:7px;padding:0;margin:0;list-style:none;max-width:100%;direction:ltr}
@@ -48,6 +49,6 @@ p{font-size:14px;line-height:1.65;color:var(--a-muted);margin:0;max-width:56ch;t
 @media(hover:hover) and (pointer:fine){.clinical-visual:has(.indicators li:hover) .fmis-plaque{border-color:#c0ffed;box-shadow:0 10px 30px -14px #73e3cd88,inset 0 1px 0 #d9fff61a}}
 
 
-.fmis-plaque::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(110deg,transparent,#e3fff12b,transparent);animation:a-sheen 8s ease-in-out infinite}
 @container(max-width:335px){.clinical-visual{gap:7px;grid-template-columns:minmax(0,1fr) 14px minmax(0,1fr)}.fmis-plaque{font-size:18px;padding:16px 7px;gap:7px}.fmis-mark{gap:3px}.fmis-mark i{width:3px}.indicators li{font-size:11px;padding:7px 6px}.winner{min-width:0}.catalogue{min-width:0}}
+@container(max-width:680px){.tile{min-height:0}}
 `;export{e as default};
